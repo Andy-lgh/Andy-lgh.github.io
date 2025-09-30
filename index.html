@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李桂花 - 个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .skill-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #2575fc;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .contact-link:hover {
+            background: #2575fc;
+            color: white;
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 50px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <!-- 请替换为您的照片 -->
+        <img src="images/huahua.jpg" alt="李桂花" class="profile-img">
+        <h1>李桂花</h1>
+        <p class="tagline">学生/数据科学与大数据技术 | 坚强勇敢，不怕困难，勇往直前</p>
+    </div>
+</header>
+
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">关于我</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>我性格自律踏实，待人真诚善良，始终相信行动胜于言语。面对挑战，我坚韧不拔，始终保持认真负责的态度完成每一项任务。
+                    生活中，我热爱排球运动，它不仅锻炼了我的体魄，也培养了我良好的团队协作精神和抗压能力。
+                    我期待在未来的职业道路上，能将这份坚持与热忱投入到自己真正热爱的领域，在实践中不断成长，实现个人价值。
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section id="contact" style="background-color: #f9f9f9;">
+    <div class="container">
+        <h2 class="section-title">联系我</h2>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 30px;">
+            如果您对我的工作感兴趣或想与我合作，请通过以下方式联系我：
+        </p>
+        <div class="contact-links">
+            <a href="mailto:your-email@example.com" class="contact-link">
+                <span>📧</span> 邮箱
+            </a>
+            <a href="https://github.com/yourusername" class="contact-link">
+                <span>🐙</span> GitHub
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" class="contact-link">
+                <span>💼</span> LinkedIn
+            </a>
+            <a href="https://twitter.com/yourusername" class="contact-link">
+                <span>🐦</span> Twitter
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 李桂花. 保留所有权利.</p>
+    </div>
+</footer>
+</body>
+</html>
